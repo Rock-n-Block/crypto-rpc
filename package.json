@@ -1,5 +1,5 @@
 {
-  "name": "crypto-rpc",
+  "name": "@tyz-wallet/crypto-rpc",
   "version": "1.1.0",
   "description": "rpc wrapper for multiple rpcs",
   "main": "index.js",
@@ -11,7 +11,6 @@
     "truffle:test": "cd blockchain/ && ../node_modules/.bin/truffle test --network development_geth && ../node_modules/.bin/truffle test --network development_matic",
     "truffle:migrate": "cd blockchain/ && ../node_modules/.bin/truffle migrate --network development_geth && ../node_modules/.bin/truffle migrate --network development_matic"
   },
-  "author": "Micah Riggan",
   "license": "ISC",
   "prettier": {},
   "dependencies": {
