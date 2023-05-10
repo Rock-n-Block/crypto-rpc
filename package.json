@@ -9,7 +9,8 @@
     "lint": "./node_modules/.bin/eslint .",
     "truffle:compile": "cd blockchain/ && ../node_modules/.bin/truffle compile --network development_geth && ../node_modules/.bin/truffle compile --network development_matic",
     "truffle:test": "cd blockchain/ && ../node_modules/.bin/truffle test --network development_geth && ../node_modules/.bin/truffle test --network development_matic",
-    "truffle:migrate": "cd blockchain/ && ../node_modules/.bin/truffle migrate --network development_geth && ../node_modules/.bin/truffle migrate --network development_matic"
+    "truffle:migrate": "cd blockchain/ && ../node_modules/.bin/truffle migrate --network development_geth && ../node_modules/.bin/truffle migrate --network development_matic",
+    "pub": "npm publish --access public"
   },
   "license": "ISC",
   "prettier": {},
