@@ -1,8 +1,11 @@
 {
-  "name": "@tyz-wallet/crypto-rpc",
-  "version": "1.1.0",
+  "name": "eonacore-crypto-rpc",
+  "version": "1.0.0",
   "description": "rpc wrapper for multiple rpcs",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "ci:test": "npm run lint && npm run truffle:compile && npm run truffle:migrate && npm run truffle:test && mocha --recursive ./tests",
     "test": "docker-compose down && docker-compose build && docker-compose run test_runner",
@@ -10,7 +13,7 @@
     "truffle:compile": "cd blockchain/ && ../node_modules/.bin/truffle compile --network development_geth && ../node_modules/.bin/truffle compile --network development_matic",
     "truffle:test": "cd blockchain/ && ../node_modules/.bin/truffle test --network development_geth && ../node_modules/.bin/truffle test --network development_matic",
     "truffle:migrate": "cd blockchain/ && ../node_modules/.bin/truffle migrate --network development_geth && ../node_modules/.bin/truffle migrate --network development_matic",
-    "pub": "npm publish --access public"
+    "pub": "npm publish"
   },
   "license": "ISC",
   "prettier": {},
